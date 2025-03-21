@@ -1,7 +1,7 @@
-# orienteering-system
+# 项目名称
 
 ## 项目简介
-基于Vue3、JavaScript、Python构成的前、后端，编写的一套适用于一定范围的定向越野游戏。
+作为一门科目的结课作业，使用前端(Vue3、JavaScript)、后端(Python)进行开发的全栈项目；包含Django和Vue.js框架的定向越野全栈项目，包括了四个小游戏。
 
 ## 目录结构
 ```
@@ -71,12 +71,59 @@ src/
   - `public/`: 静态资源文件。
     - `index.html`: 入口HTML文件。
 
-## 如何运行
+## 环境依赖
 
-### Django 项目
+### 全局依赖
+- Python 3.x
+- Node.js 14.x 或更高版本
+- npm 6.x 或更高版本
+
+### Django 项目依赖
+- Django 3.x 或更高版本
+
+### Vue.js 项目依赖
+- Vue CLI 4.x 或更高版本
+
+## 安装步骤
+
+### 克隆项目
+```sh
+git clone <仓库地址>
+cd <项目目录>
+```
+
+### 安装Django项目依赖
 1. 进入 `database/` 目录：
     ```sh
     cd database
+    ```
+2. 创建并激活虚拟环境：
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # 对于Windows用户，使用 `venv\Scripts\activate`
+    ```
+3. 安装依赖：
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+### 安装Vue.js项目依赖
+1. 进入 `dingxiangyueye/` 目录：
+    ```sh
+    cd dingxiangyueye
+    ```
+2. 安装依赖：
+    ```sh
+    npm install
+    ```
+
+## 运行项目
+
+### 运行Django开发服务器
+1. 进入 `database/` 目录并激活虚拟环境（如果尚未激活）：
+    ```sh
+    cd database
+    source venv/bin/activate  # 对于Windows用户，使用 `venv\Scripts\activate`
     ```
 2. 运行数据库迁移：
     ```sh
@@ -87,16 +134,12 @@ src/
     python manage.py runserver
     ```
 
-### Vue.js 项目
+### 运行Vue.js开发服务器
 1. 进入 `dingxiangyueye/` 目录：
     ```sh
     cd dingxiangyueye
     ```
-2. 安装依赖：
-    ```sh
-    npm install
-    ```
-3. 启动开发服务器：
+2. 启动开发服务器：
     ```sh
     npm run serve
     ```
