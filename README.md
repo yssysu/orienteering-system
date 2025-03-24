@@ -74,15 +74,15 @@ src/
 ## 环境依赖
 
 ### 全局依赖
-- Python 3.x
-- Node.js 14.x 或更高版本
-- npm 6.x 或更高版本
+- Python 3.10（建议）
+- Node.js 最新版本
+- npm 最新版本
 
 ### Django 项目依赖
-- Django 3.x 或更高版本
+- Django 最新版即可
 
 ### Vue.js 项目依赖
-- Vue CLI 4.x 或更高版本
+- Vue CLI 最新版本
 
 ## 安装步骤
 
@@ -133,6 +133,14 @@ cd <项目目录>
     ```sh
     python manage.py runserver
     ```
+4. (可选) 创建超级管理员
+    ```sh
+    python manage.py createsuperuser
+    ```
+完成上述步骤后可对数据库进行可视化管理
+
+<img width="651" alt="image" src="https://github.com/user-attachments/assets/bbaccda2-c7e2-48fd-95c9-2bafdbfab5cd" />
+
 
 ### 运行Vue.js开发服务器
 1. 进入 `dingxiangyueye/` 目录：
@@ -143,6 +151,21 @@ cd <项目目录>
     ```sh
     npm run serve
     ```
+
+#### 主要的界面展示
+
+1. 登录界面
+
+<img width="1163" alt="image" src="https://github.com/user-attachments/assets/974c69bf-cfd3-46e9-9b2d-8eacf5421e11" />
+
+2. 主界面
+
+<img width="1307" alt="image" src="https://github.com/user-attachments/assets/f05b6548-0807-4698-8177-dcf17bb3f0a5" />
+
+3. 任务界面
+
+<img width="1289" alt="image" src="https://github.com/user-attachments/assets/d395bdef-6c56-4a1f-b4d6-4fded96f169c" />
+
 
 ## 贡献
 欢迎提交问题和拉取请求来改进项目。
